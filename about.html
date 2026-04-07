@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Udawalawe Lake Kayaking</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0369a1',
+                        secondary: '#0ea5e9',
+                        accent: '#f59e0b',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pt-20 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 pointer-events-auto bg-dark/90 backdrop-blur-md shadow-lg" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-water text-secondary text-2xl"></i>
+                    <a href="index.html" class="text-white font-bold text-xl md:text-2xl tracking-wide">Udawalawe <span class="text-secondary">Kayaking</span></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-200 hover:text-white transition-colors">Home</a>
+                    <a href="about.html" class="text-secondary font-medium transition-colors">About Us</a>
+                    <a href="gallery.html" class="text-slate-200 hover:text-white transition-colors">Gallery</a>
+                    <a href="contact.html" class="bg-secondary hover:bg-primary text-white px-5 py-2 rounded-full font-medium transition-all shadow-lg shadow-secondary/30 transform hover:-translate-y-0.5">Book Now</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-200 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark/95 backdrop-blur-lg absolute w-full border-t border-white/10">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-3 text-slate-300 hover:text-white border-b border-white/5">Home</a>
+                <a href="about.html" class="block px-3 py-3 text-secondary font-medium border-b border-white/5">About Us</a>
+                <a href="gallery.html" class="block px-3 py-3 text-slate-300 hover:text-white border-b border-white/5">Gallery</a>
+                <a href="contact.html" class="block px-3 py-3 text-secondary font-bold">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-dark text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 z-0">
+            <img src="https://i.ibb.co/NdHdFM3F/Whats-App-Image-2026-04-03-at-11-42-37.jpg" alt="Background" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in-up">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">About Us</h1>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto">Discover the passion behind our kayaking adventures and meet the team dedicated to showing you the wonders of Udawalawe Lake.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="md:w-1/2 relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl p-2 bg-white">
+                        <img src="https://i.ibb.co/1tCmtrnL/Whats-App-Image-2026-04-03-at-11-44-18-1.jpg" alt="Kayaking team" class="w-full rounded-xl transform hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="absolute -top-6 -right-6 w-32 h-32 bg-primary rounded-full mix-blend-multiply filter blur-2xl opacity-50 z-0"></div>
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-secondary rounded-full mix-blend-multiply filter blur-2xl opacity-50 z-0"></div>
+                </div>
+                
+                <div class="md:w-1/2 space-y-6">
+                    <h2 class="text-primary font-bold tracking-wider uppercase text-sm mb-2">Our Story</h2>
+                    <h3 class="text-3xl md:text-4xl font-bold text-dark">A Legacy of Hospitality</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        For over 12 years, we have been crafting unforgettable resort and cabana experiences for guests visiting Udawalawe. Rooted in this deep passion for exceptional hospitality and our love for nature, we recently launched our exclusive kayaking tours to give adventurers a closer, more intimate bond with the breathtaking Udawalawe Lake.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Though our kayaking service began just a few months ago, our decade-long legacy ensures you receive world-class service, expert guidance, and uncompromising attention to safety. In this short time, we've already had the pleasure of guiding over 100 happy kayakers through these serene waters. We bring over 12 years of hospitality excellence directly to your water adventure.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 pt-6">
+                        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 transform hover:-translate-y-1 transition-transform">
+                            <h4 class="text-4xl font-extrabold text-primary mb-2">12+</h4>
+                            <p class="text-slate-600 font-medium font-sm">Years in Hospitality & Resorts</p>
+                        </div>
+                        <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 transform hover:-translate-y-1 transition-transform">
+                            <h4 class="text-4xl font-extrabold text-primary mb-2">100+</h4>
+                            <p class="text-slate-600 font-medium font-sm">Happy Kayakers in 6 Months</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-slate-300 py-12 mt-auto border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-water text-secondary text-2xl"></i>
+                        <span class="text-white font-bold text-xl tracking-wide">Udawalawe <span class="text-secondary">Kayaking</span></span>
+                    </div>
+                    <p class="text-slate-400 mb-6 max-w-sm">
+                        Providing unforgettable kayaking experiences on the serene waters of Udawalawe Lake, Sri Lanka.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="gallery.html" class="hover:text-secondary transition-colors">Gallery</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Contact Info</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-secondary"></i>
+                            <span>97 2/1 Bodhimaluwa,<br>Thimbolkatiya, Udawalawa</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-secondary"></i>
+                            <span>+94 77 943 3188</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-secondary"></i>
+                            <span>araliyalakeviewcabana@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
+                <p>&copy; 2026 Udawalawe Lake Kayaking. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

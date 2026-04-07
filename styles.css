@@ -1,0 +1,63 @@
+/* Base Styles & Tweaks */
+:root {
+  --primary: #0369a1;
+  --secondary: #0ea5e9;
+  --dark: #0f172a;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Animations */
+@keyframes image-zoom {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+.animate-image-zoom {
+  animation: image-zoom 30s infinite alternate ease-in-out;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-up {
+  animation: fade-in-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Add staggered animation delays for cards or grid items */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+
+/* Custom Form elements styling tweaks */
+input[type="radio"]:checked {
+  background-image: none;
+  background-color: var(--secondary);
+}
+
+/* Glassmorphism navbar styling is handled via tailwind utility classes, 
+   but specific backdrop tweaks can go here if needed */

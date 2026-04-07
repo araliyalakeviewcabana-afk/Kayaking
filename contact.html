@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Udawalawe Lake Kayaking</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0369a1',
+                        secondary: '#0ea5e9',
+                        accent: '#f59e0b',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased pt-20 flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 pointer-events-auto bg-dark/90 backdrop-blur-md shadow-lg" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-water text-secondary text-2xl"></i>
+                    <a href="index.html" class="text-white font-bold text-xl md:text-2xl tracking-wide">Udawalawe <span class="text-secondary">Kayaking</span></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-200 hover:text-white transition-colors">Home</a>
+                    <a href="about.html" class="text-slate-200 hover:text-white transition-colors">About Us</a>
+                    <a href="gallery.html" class="text-slate-200 hover:text-white transition-colors">Gallery</a>
+                    <a href="contact.html" class="bg-secondary hover:bg-primary text-white px-5 py-2 rounded-full font-medium transition-all shadow-lg shadow-secondary/30 transform hover:-translate-y-0.5">Book Now</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-200 hover:text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark/95 backdrop-blur-lg absolute w-full border-t border-white/10">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="index.html" class="block px-3 py-3 text-slate-300 hover:text-white border-b border-white/5">Home</a>
+                <a href="about.html" class="block px-3 py-3 text-slate-300 hover:text-white border-b border-white/5">About Us</a>
+                <a href="gallery.html" class="block px-3 py-3 text-slate-300 hover:text-white border-b border-white/5">Gallery</a>
+                <a href="contact.html" class="block px-3 py-3 text-secondary font-bold">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="bg-dark text-white py-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20 z-0">
+            <img src="https://i.ibb.co/76KdxLs/Whats-App-Image-2026-04-03-at-11-58-58.jpg" alt="Background map placeholder" class="w-full h-full object-cover">
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center animate-fade-in-up">
+            <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Get In Touch</h1>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto">Have a question or ready to book your next adventure? Send us a message and we'll get back to you as soon as possible!</p>
+        </div>
+    </header>
+
+    <!-- Contact Form and Details -->
+    <section class="py-20 flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                
+                <!-- Contact Information -->
+                <div class="md:w-2/5 p-10 bg-primary text-white relative overflow-hidden">
+                    <!-- Decor -->
+                    <div class="absolute -right-10 -top-10 w-40 h-40 bg-secondary rounded-full filter blur-2xl opacity-50 z-0"></div>
+                    <div class="absolute -left-10 -bottom-10 w-40 h-40 bg-blue-800 rounded-full filter blur-2xl opacity-70 z-0"></div>
+                    
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <p class="text-blue-100 mb-10">Fill up the form and our team will get back to you within 24 hours.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 flex-shrink-0 bg-white/10 rounded-full flex items-center justify-center">
+                                    <i class="fa-solid fa-phone text-secondary"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-blue-200">Phone Number</p>
+                                    <p class="font-medium">+94 77 943 3188</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 flex-shrink-0 bg-white/10 rounded-full flex items-center justify-center">
+                                    <i class="fa-solid fa-envelope text-secondary"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-blue-200">Email Address</p>
+                                    <p class="font-medium">araliyalakeviewcabana@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 flex-shrink-0 bg-white/10 rounded-full flex items-center justify-center">
+                                    <i class="fa-solid fa-location-dot text-secondary"></i>
+                                </div>
+                                <div>
+                                    <p class="text-sm text-blue-200">Location</p>
+                                    <p class="font-medium">97 2/1 Bodhimaluwa, Thimbolkatiya, Udawalawa</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-16 flex space-x-4">
+                            <a href="https://www.tiktok.com/@aliya.lake.forest.cabana" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                            <a href="https://wa.me/94779433188" target="_blank" class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="md:w-3/5 p-10 md:p-14">
+                    <form action="https://formsubmit.co/araliyalakeviewcabana@gmail.com" method="POST" class="space-y-6">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Website Inquiry / Booking - Udawalawe Kayaking">
+                        <input type="hidden" name="_template" value="table">
+                        <!-- Uncomment if you want to redirect to contact page after submission -->
+                        <!-- <input type="hidden" name="_next" value="https://yourwebsite.com/contact.html"> -->
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="first_name" class="block text-sm font-medium text-slate-600 mb-2">First Name</label>
+                                <input type="text" id="first_name" name="first_name" class="w-full px-4 py-3 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-secondary/50 focus:border-secondary transition-colors" placeholder="John">
+                            </div>
+                            <div>
+                                <label for="last_name" class="block text-sm font-medium text-slate-600 mb-2">Last Name</label>
+                                <input type="text" id="last_name" name="last_name" class="w-full px-4 py-3 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-secondary/50 focus:border-secondary transition-colors" placeholder="Doe">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-600 mb-2">Email Address</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-secondary/50 focus:border-secondary transition-colors" placeholder="john@example.com">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-slate-600 mb-2">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-secondary/50 focus:border-secondary transition-colors" placeholder="+94 77 000 0000">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <span class="block text-sm font-medium text-slate-600 mb-2">What are you interested in?</span>
+                            <div class="flex flex-wrap gap-4 mt-2">
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="interest" value="general" class="form-radio text-secondary focus:ring-secondary" checked>
+                                    <span class="ml-2 text-slate-600">General Inquiry</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="interest" value="booking" class="form-radio text-secondary focus:ring-secondary">
+                                    <span class="ml-2 text-slate-600">Making a Booking</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <input type="radio" name="interest" value="group" class="form-radio text-secondary focus:ring-secondary">
+                                    <span class="ml-2 text-slate-600">Group Packages</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-600 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:outline-none focus:ring-2 focus:ring-secondary/50 focus:border-secondary transition-colors resize-none" placeholder="Write your message here..."></textarea>
+                        </div>
+                        
+                        <div class="pt-2 text-right">
+                            <button type="submit" class="bg-primary hover:bg-dark text-white px-8 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-xl inline-flex items-center gap-2 transform hover:-translate-y-1">
+                                Send Message <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-slate-300 py-12 mt-auto border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-water text-secondary text-2xl"></i>
+                        <span class="text-white font-bold text-xl tracking-wide">Udawalawe <span class="text-secondary">Kayaking</span></span>
+                    </div>
+                    <p class="text-slate-400 mb-6 max-w-sm">
+                        Providing unforgettable kayaking experiences on the serene waters of Udawalawe Lake, Sri Lanka.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="index.html" class="hover:text-secondary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-secondary transition-colors">About Us</a></li>
+                        <li><a href="gallery.html" class="hover:text-secondary transition-colors">Gallery</a></li>
+                        <li><a href="contact.html" class="hover:text-secondary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Contact Info</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-secondary"></i>
+                            <span>97 2/1 Bodhimaluwa,<br>Thimbolkatiya, Udawalawa</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-secondary"></i>
+                            <span>+94 77 943 3188</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-secondary"></i>
+                            <span>araliyalakeviewcabana@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-xs text-slate-500">
+                <p>&copy; 2026 Udawalawe Lake Kayaking. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
